@@ -17,7 +17,7 @@ const Casa = () => {
     const fetchUsers = async () => {
         try {
             setLoading(true);
-            const response = await fetch('http://13.58.169.56/usuarios');
+            const response = await fetch('https://13.58.169.56/usuarios');
             
             if (!response.ok) throw new Error('Error al conectar con el servidor');
             
@@ -42,7 +42,7 @@ const Casa = () => {
         if (!confirm) return;
 
         try {
-            const response = await fetch(`http://13.58.169.56/usuarios/${id}`, {
+            const response = await fetch(`https://13.58.169.56/usuarios/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
