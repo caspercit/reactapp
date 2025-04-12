@@ -15,7 +15,7 @@ const Inicio = () => {
         setIsLoading(true);
 
         try {
-            const response = await fetch('http://13.58.169.56/login', {
+            const response = await fetch('https://13.58.169.56/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
